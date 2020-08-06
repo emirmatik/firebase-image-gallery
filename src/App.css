@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9faf5;
+}
+.App {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+.title h3 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+}
+.title h2 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  padding-top: 5%;
+  text-align: center;
+}
+form {
+  margin: 30px auto;
+  text-align: center;
+}
+#input-file {
+  display: none;
+}
+.file-choose-icon {
+  cursor: pointer;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  line-height: 2rem;
+  margin: 30px auto;
+  font-size: 1.5rem;
+  background: rgb(207, 163, 80);
+  border: 1px solid rgb(207, 163, 80);
+  color: white;
+  transition: 0.3s ease all;
+}
+.file-choose-icon:hover {
+  background: white;
+  border: 1px solid rgb(207, 163, 80);
+  color: rgb(207, 163, 80);
+}
+.loading-bar {
+  height: 5px;
+  background-color: rgb(207, 163, 80);
+  margin-top: 20px;
+}
+.image-grid {
+  display: grid;
+  padding: 5rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+.image {
+  overflow: hidden;
+  opacity: 0.8;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+}
+.modal-div img {
+  display: block;
+  max-width: 60%;
+  max-height: 80%;
+  margin: 70px auto;
+  box-shadow: 3px 5px 7px rgb(0, 0, 0, 0.8);
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 700px) {
+  .title h3 {
+    font-size: 0.8rem;
+  }
+  .file-choose-icon {
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.8rem;
+    font-size: 1.5rem;
+  }
+  .image-grid {
+    padding: 2rem 0;
+  }
+  .image {
+    opacity: 1;
+  }
+  .modal-div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 85%;
+    max-height: 100%;
+    margin: 0 auto;
+    border: 2px solid white;
+  }
+}
