@@ -2,7 +2,13 @@ import firebase from "firebase";
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  // PASTE_HERE_YOUR_CONFIG_OPTIONS
+  apiKey: "FILL_HERE",
+  authDomain: "FILL_HERE",
+  databaseURL: "FILL_HERE",
+  projectId: "FILL_HERE",
+  storageBucket: "FILL_HERE",
+  messagingSenderId: "FILL_HERE",
+  appId: "FILL_HERE",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
