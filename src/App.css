@@ -50,6 +50,10 @@ form {
   border: 1px solid rgb(207, 163, 80);
   color: rgb(207, 163, 80);
 }
+#loading-gif {
+  display: block;
+  margin: 10% auto !important;
+}
 .loading-bar {
   height: 5px;
   background-color: rgb(207, 163, 80);
