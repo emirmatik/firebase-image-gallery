@@ -11,7 +11,6 @@ function Loadingbar({ file, setFile }) {
       Notiflix.Notify.Success("Uploaded Successfuly!");
     }
   }, [url]);
-  console.log(progress, url);
   return (
     <motion.div
       initial={{ width: "0" }}
